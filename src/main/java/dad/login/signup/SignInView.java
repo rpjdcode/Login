@@ -20,9 +20,6 @@ public class SignInView extends GridPane{
 	
 	private CheckBox authMethod;
 	
-	// DEV
-	private CheckBox gridLines = new CheckBox("GridLines");
-	
 	public SignInView() {
 		// Ajustes del GridPane
 		super();
@@ -53,7 +50,6 @@ public class SignInView extends GridPane{
 		this.addRow(1, passLabel, passInput);
 		this.addRow(2, authMethod);
 		this.addRow(3, botonera);
-		this.addRow(4, gridLines);
 	
 		GridPane.setHalignment(userLabel, HPos.LEFT);
 		GridPane.setHalignment(passLabel, HPos.LEFT);
@@ -62,15 +58,7 @@ public class SignInView extends GridPane{
 		GridPane.setHalignment(authMethod, HPos.CENTER);
 		
 	}
-	
-	public Label getUserLabel() {
-		return this.userLabel;
-	}
-	
-	public Label getPassLabel() {
-		return this.passLabel;
-	}
-	
+		
 	public TextField getUserInput() {
 		return this.userInput;
 	}
@@ -90,9 +78,4 @@ public class SignInView extends GridPane{
 	public CheckBox getAuthMethodCheck() {
 		return this.authMethod;
 	}
-	
-	public CheckBox getGridLinesCheck() {
-		return this.gridLines;
-	}
-	
 }
