@@ -57,9 +57,11 @@ public class SignInController {
 	}
 	
 	private void onCancelButtonAction(ActionEvent e) {
-		Node nodo = (Node)e.getSource();
-		Stage stg = (Stage)nodo.getScene().getWindow();
-		stg.close();
+		Stage st = (Stage)view.getCancelButton().getScene().getWindow();
+		st.close();
+//		Node nodo = (Node)e.getSource();
+//		Stage stg = (Stage)nodo.getScene().getWindow();
+//		stg.close();
 	}
 	
 	
